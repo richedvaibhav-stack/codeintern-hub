@@ -15,7 +15,7 @@ const Navbar = () => {
             <img 
               src={logo} 
               alt="CodeIntern Logo" 
-              className="h-10 md:h-12 w-auto"
+              className="h-10 md:h-12 w-10 md:w-12 rounded-full object-cover"
             />
           </Link>
 

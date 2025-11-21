@@ -12,7 +12,7 @@ const Hero = () => {
             <img 
               src={logo} 
               alt="CodeIntern Logo" 
-              className="h-32 md:h-40 w-auto"
+              className="h-32 md:h-40 w-32 md:w-40 rounded-full object-cover"
             />
           </div>
 
