@@ -1,12 +1,21 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, Clock, Users } from "lucide-react";
+import logo from "@/assets/CodeIntern_Logo.png";
 
 const Hero = () => {
   return (
     <section className="pt-32 pb-20 px-4">
       <div className="container mx-auto">
         <div className="text-center max-w-4xl mx-auto space-y-8 animate-fade-in">
+          <div className="flex justify-center mb-6">
+            <img 
+              src={logo} 
+              alt="CodeIntern Logo" 
+              className="h-32 md:h-40 w-auto"
+            />
+          </div>
+
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary rounded-full text-sm font-medium">
             <Award className="w-4 h-4 text-primary" />
             <span>Certified Online Internships</span>
