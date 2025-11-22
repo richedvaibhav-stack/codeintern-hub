@@ -16,8 +16,16 @@ const InternshipCard = ({ internship }: InternshipCardProps) => {
   return (
     <Card className="group hover:shadow-large transition-all duration-300 border-border hover:border-primary/50 h-full flex flex-col">
       <CardHeader>
-        <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-          {IconComponent && <IconComponent className="w-6 h-6 text-primary-foreground" />}
+        <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform overflow-hidden">
+          {internship.logo ? (
+            <img 
+              src={internship.logo} 
+              alt={`${internship.title} logo`} 
+              className="w-full h-full object-contain p-1"
+            />
+          ) : (
+            IconComponent && <IconComponent className="w-6 h-6 text-primary-foreground" />
+          )}
         </div>
         <CardTitle className="text-xl group-hover:text-primary transition-colors">
           {internship.title}

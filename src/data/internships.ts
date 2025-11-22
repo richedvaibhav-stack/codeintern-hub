@@ -7,6 +7,7 @@ export interface Internship {
   tasks: string[];
   learnings: string[];
   icon: string;
+  logo?: string;
 }
 
 export const internships: Internship[] = [
@@ -28,7 +29,8 @@ export const internships: Internship[] = [
       "Responsive web design principles",
       "Version control with Git"
     ],
-    icon: "Code"
+    icon: "Code",
+    logo: undefined // Add web dev logo when available
   },
   {
     id: "cpp-development",
@@ -48,7 +50,8 @@ export const internships: Internship[] = [
       "Algorithm optimization techniques",
       "Memory management and pointers"
     ],
-    icon: "Terminal"
+    icon: "Terminal",
+    logo: "/src/assets/internship-logos/cpp-logo.png"
   },
   {
     id: "python-data",
@@ -68,7 +71,8 @@ export const internships: Internship[] = [
       "Data visualization with Matplotlib/Seaborn",
       "Introduction to machine learning concepts"
     ],
-    icon: "BarChart"
+    icon: "BarChart",
+    logo: "/src/assets/internship-logos/python-logo.png"
   },
   {
     id: "uiux-design",
@@ -88,7 +92,8 @@ export const internships: Internship[] = [
       "Wireframing and prototyping",
       "Design systems and component libraries"
     ],
-    icon: "Palette"
+    icon: "Palette",
+    logo: "/src/assets/internship-logos/uiux-logo.jpg"
   },
   {
     id: "android-development",
@@ -108,6 +113,28 @@ export const internships: Internship[] = [
       "Local data persistence",
       "App lifecycle management"
     ],
-    icon: "Smartphone"
+    icon: "Smartphone",
+    logo: undefined // Add android logo when available
+  },
+  {
+    id: "java-development",
+    title: "Java Development Internship",
+    duration: "1 Month",
+    description: "Learn Java fundamentals, OOP, file handling, and build console + mini GUI applications.",
+    skills: ["Core Java", "OOP", "File Handling", "Java Swing", "JavaFX"],
+    tasks: [
+      "Implement OOP concepts with 3 classes + interfaces",
+      "Build a small console-based project (like Library or Billing System)",
+      "Create a mini Java Swing or JavaFX project with basic UI"
+    ],
+    learnings: [
+      "Core Java programming fundamentals",
+      "Object-oriented programming principles",
+      "File input/output operations",
+      "GUI development with Swing/JavaFX",
+      "Exception handling and debugging"
+    ],
+    icon: "Coffee",
+    logo: "/src/assets/internship-logos/java-logo.png"
   }
 ];

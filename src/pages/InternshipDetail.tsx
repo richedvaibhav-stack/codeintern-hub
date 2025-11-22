@@ -51,8 +51,16 @@ const InternshipDetail = () => {
             {/* Header */}
             <div className="bg-gradient-primary p-4 sm:p-6 md:p-8 rounded-xl text-primary-foreground mb-6 sm:mb-8 shadow-large overflow-hidden">
               <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
-                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                  {IconComponent && <IconComponent className="w-7 h-7 sm:w-8 sm:h-8" />}
+                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-white/20 rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
+                  {internship.logo ? (
+                    <img 
+                      src={internship.logo} 
+                      alt={`${internship.title} logo`} 
+                      className="w-full h-full object-contain p-2"
+                    />
+                  ) : (
+                    IconComponent && <IconComponent className="w-7 h-7 sm:w-8 sm:h-8" />
+                  )}
                 </div>
                 <div className="flex-1 w-full min-w-0">
                   <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 break-words">
