@@ -1,8 +1,6 @@
-import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import ApplyModal from "@/components/ApplyModal";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -12,7 +10,6 @@ import * as Icons from "lucide-react";
 
 const InternshipDetail = () => {
   const { id } = useParams();
-  const [modalOpen, setModalOpen] = useState(false);
   
   const internship = internships.find((i) => i.id === id);
 
@@ -138,10 +135,16 @@ const InternshipDetail = () => {
               </p>
               <Button 
                 size="lg"
-                onClick={() => setModalOpen(true)}
-                className="bg-gradient-primary hover:opacity-90 transition-opacity text-lg px-8 shadow-large"
+                asChild
+                className="bg-gradient-primary hover:opacity-90 hover:scale-105 transition-all text-lg px-8 shadow-large"
               >
-                Apply Now
+                <a 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeGbJjSopl3DDMS1a56Ooz6pH3Q3amotJoAeJjTd4GSMo2wEg/viewform?usp=dialog"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Apply Now
+                </a>
               </Button>
             </div>
           </div>
@@ -149,11 +152,6 @@ const InternshipDetail = () => {
       </section>
 
       <Footer />
-      <ApplyModal 
-        open={modalOpen} 
-        onOpenChange={setModalOpen}
-        internshipTitle={internship.title}
-      />
     </div>
   );
 };
