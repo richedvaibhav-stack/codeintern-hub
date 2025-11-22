@@ -21,13 +21,14 @@ const Hero = () => {
             <span>Certified Online Internships</span>
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-            CodeIntern — Certified Online{" "}
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-tight">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Development & Education
-            </span>{" "}
-            Internships
+              CodeIntern
+            </span>
           </h1>
+          <p className="text-lg md:text-xl text-muted-foreground font-medium -mt-2">
+            Certified Online Development & Education Internships
+          </p>
 
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             1-Month Task Based Remote Internships for Students. Learn, Build, and Get Certified in Your Dream Tech Stack
