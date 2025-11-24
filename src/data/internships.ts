@@ -53,7 +53,7 @@ export const internships: Internship[] = [
     "Basics of replication and backups"
     ],
     icon: "Code",
-    logo: "/src/assets/internship-logos/MongoDB_logo.png"
+    logo: "/internship-logos/MongoDB_logo.png"
   },
   {
     id: "cpp",
@@ -75,7 +75,7 @@ export const internships: Internship[] = [
     "Basic file handling in C++"
     ],
     icon: "Terminal",
-    logo: "/src/assets/internship-logos/cpp-logo.png"
+    logo: "/internship-logos/cpp-logo.png"
   },
   {
     id: "python-data",
@@ -96,7 +96,7 @@ export const internships: Internship[] = [
       "Introduction to machine learning concepts"
     ],
     icon: "BarChart",
-    logo: "/src/assets/internship-logos/python-logo.png"
+    logo: "/internship-logos/python-logo.png"
   },
   {
     id: "uiux-design",
@@ -117,7 +117,7 @@ export const internships: Internship[] = [
       "Design systems and component libraries"
     ],
     icon: "Palette",
-    logo: "/src/assets/internship-logos/uiux-logo.jpg"
+    logo: "/internship-logos/uiux-logo.jpg"
   },
   {
     id: "android-development",
@@ -159,7 +159,7 @@ export const internships: Internship[] = [
       "Exception handling and debugging"
     ],
     icon: "Coffee",
-    logo: "/src/assets/internship-logos/java-logo.png"
+    logo: "/internship-logos/java-logo.png"
   },
   {
   id: "cloud-computing",
@@ -180,7 +180,7 @@ export const internships: Internship[] = [
     "Storage & permissions management"
   ],
   icon: "Cloud",
-  logo: "/src/assets/internship-logos/CloudComputing_logo.jpg"
+  logo: "/internship-logos/CloudComputing_logo.jpg"
 },
 {
   id: "devops",
@@ -201,7 +201,7 @@ export const internships: Internship[] = [
     "Automation fundamentals"
   ],
   icon: "Wrench",
-  logo: "/src/assets/internship-logos/DevOps_logo.png"
+  logo: "/internship-logos/DevOps_logo.png"
 },
 {
   id: "dsa-java",
@@ -222,7 +222,7 @@ export const internships: Internship[] = [
     "Using Java collections"
   ],
   icon: "Layers",
-  logo: "/src/assets/internship-logos/DSAinJAVA_logo.png"
+  logo: "/internship-logos/DSAinJAVA_logo.png"
 },
 {
   id: "computer-networks",
@@ -245,7 +245,7 @@ export const internships: Internship[] = [
     "Hands-on networking simulation"
   ],
   icon: "Network",
-  logo: "/src/assets/internship-logos/ComputerNetwork_logo.jpg"
+  logo: "/internship-logos/ComputerNetwork_logo.jpg"
 },
 {
   id: "linux-fundamentals",
@@ -268,7 +268,7 @@ export const internships: Internship[] = [
     "Package installation & system monitoring"
   ],
   icon: "Terminal",
-  logo: "/src/assets/internship-logos/linux_logo.jpg"
+  logo: "/internship-logos/linux_logo.jpg"
 },
 {
   id: "git-github",
@@ -291,6 +291,6 @@ export const internships: Internship[] = [
     "Collaborating using pull requests"
   ],
   icon: "GitBranch",
-  logo: "/src/assets/internship-logos/GitNgithub_logo.jpg"
+  logo: "/internship-logos/GitNgithub_logo.jpg"
 }
 ];
