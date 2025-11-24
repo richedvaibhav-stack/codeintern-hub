@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, MessageCircle, HelpCircle } from "lucide-react";
 import {
@@ -39,6 +40,11 @@ const faqs = [
 const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO 
+        title="Contact Us - Get Support"
+        description="Have questions about our internship programs? Contact CodeIntern for email and WhatsApp support. Get answers to frequently asked questions about our free 1-month task-based internships."
+        canonicalUrl="https://yourwebsite.com/contact"
+      />
       <Navbar />
       
       <section className="pt-32 pb-20 px-4">

@@ -1,11 +1,17 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import InternshipCard from "@/components/InternshipCard";
+import SEO from "@/components/SEO";
 import { internships } from "@/data/internships";
 
 const Internships = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO 
+        title="All Internship Programs"
+        description="Explore comprehensive 1-month task-based internships in Web Development, Python, C++, Java, React, SQL, MongoDB, UI/UX Design, DevOps, and more. Free certified online internships for students and freshers."
+        canonicalUrl="https://yourwebsite.com/internships"
+      />
       <Navbar />
       
       <section className="pt-32 pb-20 px-4">
