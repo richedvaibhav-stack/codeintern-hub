@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -36,6 +37,11 @@ const InternshipDetail = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO 
+        title={internship.title}
+        description={`${internship.description} Learn ${internship.skills.slice(0, 3).join(', ')} and more. ${internship.duration} task-based online internship with certificate.`}
+        canonicalUrl={`https://yourwebsite.com/internship/${internship.id}`}
+      />
       <Navbar />
       
       <section className="pt-32 pb-20 px-4">

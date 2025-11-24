@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import InternshipCard from "@/components/InternshipCard";
 import HowItWorks from "@/components/HowItWorks";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { internships } from "@/data/internships";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -11,6 +12,11 @@ import { ArrowRight } from "lucide-react";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO 
+        title="Certified Online Development & Education Internships"
+        description="1-Month Task Based Remote Internships for Students. Get certified in Web Development, Python, C++, Java, UI/UX Design, SQL, MongoDB, DevOps, and more. Free online internship programs for beginners and freshers."
+        canonicalUrl="https://yourwebsite.com/"
+      />
       <Navbar />
       <Hero />
 
