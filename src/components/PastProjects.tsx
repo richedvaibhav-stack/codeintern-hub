@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Code2, Layout, Calculator, Palette, Lock, Globe } from "lucide-react";
+import RevealOnScroll from "@/components/RevealOnScroll";
 
 const projects = [
   {
@@ -50,62 +51,66 @@ const projects = [
 
 const PastProjects = () => {
   return (
-    <section className="py-20 px-4">
+    <section id="projects" className="py-20 px-4">
       <div className="container mx-auto">
-        <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Past Intern <span className="bg-gradient-primary bg-clip-text text-transparent">Projects</span>
-          </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Explore real projects completed by our interns during their training
-          </p>
-        </div>
+        <RevealOnScroll>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Past Intern <span className="bg-gradient-primary bg-clip-text text-transparent">Projects</span>
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Explore real projects completed by our interns during their training
+            </p>
+          </div>
+        </RevealOnScroll>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {projects.map((project, index) => (
-            <Card
-              key={index}
-              className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in overflow-hidden"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <CardHeader className="pb-4">
-                <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-4 ${project.color}`}>
-                  <project.icon className="w-7 h-7" />
-                </div>
-                <h3 className="font-semibold text-xl text-foreground group-hover:text-primary transition-colors">
-                  {project.title}
-                </h3>
-              </CardHeader>
-              <CardContent className="pb-4">
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {project.description}
-                </p>
-              </CardContent>
-              <CardFooter className="flex flex-wrap gap-2 pt-0">
-                {project.tech.map((tech, techIndex) => (
-                  <Badge 
-                    key={techIndex} 
-                    variant="secondary"
-                    className="text-xs"
-                  >
-                    {tech}
-                  </Badge>
-                ))}
-              </CardFooter>
-            </Card>
+            <RevealOnScroll key={index} delay={index * 100}>
+              <Card
+                className="group hover:shadow-xl transition-all duration-300 hover-lift overflow-hidden h-full"
+              >
+                <CardHeader className="pb-4">
+                  <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-4 ${project.color}`}>
+                    <project.icon className="w-7 h-7" />
+                  </div>
+                  <h3 className="font-semibold text-xl text-foreground group-hover:text-primary transition-colors">
+                    {project.title}
+                  </h3>
+                </CardHeader>
+                <CardContent className="pb-4">
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {project.description}
+                  </p>
+                </CardContent>
+                <CardFooter className="flex flex-wrap gap-2 pt-0">
+                  {project.tech.map((tech, techIndex) => (
+                    <Badge 
+                      key={techIndex} 
+                      variant="secondary"
+                      className="text-xs"
+                    >
+                      {tech}
+                    </Badge>
+                  ))}
+                </CardFooter>
+              </Card>
+            </RevealOnScroll>
           ))}
         </div>
 
-        <div className="text-center">
-          <Button 
-            size="lg"
-            variant="outline"
-            className="group border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-          >
-            View More Projects
-            <ExternalLink className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </Button>
-        </div>
+        <RevealOnScroll>
+          <div className="text-center">
+            <Button 
+              size="lg"
+              variant="outline"
+              className="group border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+            >
+              View More Projects
+              <ExternalLink className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </div>
+        </RevealOnScroll>
       </div>
     </section>
   );
