@@ -1,6 +1,8 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import InternshipCard from "@/components/InternshipCard";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import PastProjects from "@/components/PastProjects";
 import HowItWorks from "@/components/HowItWorks";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
@@ -59,6 +61,8 @@ const Index = () => {
         </div>
       </section>
 
+      <WhyChooseUs />
+      <PastProjects />
       <HowItWorks />
       <Footer />
     </div>
