@@ -85,6 +85,10 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground font-poppins;
   }
@@ -92,4 +96,61 @@ All colors MUST be HSL.
   h1, h2, h3, h4, h5, h6 {
     @apply font-semibold;
   }
+}
+
+/* Scroll Reveal Animation Classes */
+@layer utilities {
+  .reveal {
+    @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
+  }
+
+  .reveal.visible {
+    @apply opacity-100 translate-y-0;
+  }
+
+  .reveal-left {
+    @apply opacity-0 translate-x-8 transition-all duration-700 ease-out;
+  }
+
+  .reveal-left.visible {
+    @apply opacity-100 translate-x-0;
+  }
+
+  .reveal-right {
+    @apply opacity-0 -translate-x-8 transition-all duration-700 ease-out;
+  }
+
+  .reveal-right.visible {
+    @apply opacity-100 translate-x-0;
+  }
+
+  .reveal-scale {
+    @apply opacity-0 scale-95 transition-all duration-500 ease-out;
+  }
+
+  .reveal-scale.visible {
+    @apply opacity-100 scale-100;
+  }
+
+  /* Stagger delays */
+  .delay-100 { transition-delay: 100ms; }
+  .delay-200 { transition-delay: 200ms; }
+  .delay-300 { transition-delay: 300ms; }
+  .delay-400 { transition-delay: 400ms; }
+  .delay-500 { transition-delay: 500ms; }
+  .delay-600 { transition-delay: 600ms; }
+
+  /* Hover lift effect */
+  .hover-lift {
+    @apply transition-transform duration-300 ease-out;
+  }
+
+  .hover-lift:hover {
+    @apply -translate-y-2;
+  }
+}
+
+/* Section spacing */
+section {
+  @apply relative;
 }
