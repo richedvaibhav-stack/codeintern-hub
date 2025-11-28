@@ -4,6 +4,7 @@ import InternshipCard from "@/components/InternshipCard";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import PastProjects from "@/components/PastProjects";
 import HowItWorks from "@/components/HowItWorks";
+import CertificateStatus from "@/components/CertificateStatus";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import RevealOnScroll from "@/components/RevealOnScroll";
@@ -63,6 +64,7 @@ const Index = () => {
       </section>
 
       <WhyChooseUs />
+      <CertificateStatus />
       <PastProjects />
       <HowItWorks />
       <Footer />
