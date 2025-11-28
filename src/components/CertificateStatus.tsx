@@ -76,7 +76,7 @@ const CertificateStatus = () => {
                 <div className="relative flex-1">
                   <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
                   <Input
-                    placeholder="Enter your Intern ID (e.g., COE/OCT015)"
+                    placeholder="Enter your Intern ID"
                     value={internId}
                     onChange={(e) => setInternId(e.target.value)}
                     onKeyPress={handleKeyPress}
