@@ -6,7 +6,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { Info } from "lucide-react";
+import { Info, Gift } from "lucide-react";
 
 interface ApplyModalProps {
   open: boolean;
@@ -33,6 +33,17 @@ const ApplyModal = ({ open, onOpenChange, internshipTitle }: ApplyModalProps) =>
             You can bookmark this page and check back later.
           </DialogDescription>
         </DialogHeader>
+
+        {/* Swag Banner */}
+        <div className="mt-6 p-4 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg border border-primary/20">
+          <div className="flex items-center gap-3 justify-center">
+            <Gift className="w-6 h-6 text-primary" />
+            <p className="text-sm font-medium text-foreground text-center">
+              Complete the internship successfully and unlock your <span className="text-primary font-bold">CodeIntern Swags</span> 🎁
+            </p>
+          </div>
+        </div>
+
         <div className="flex justify-center mt-4">
           <Button 
             onClick={() => onOpenChange(false)}
