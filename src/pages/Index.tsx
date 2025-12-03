@@ -64,9 +64,9 @@ const Index = () => {
         </div>
       </section>
 
+      <SwagSection />
       <WhyChooseUs />
       <CertificateStatus />
-      <SwagSection />
       <PastProjects />
       <HowItWorks />
       <Footer />
