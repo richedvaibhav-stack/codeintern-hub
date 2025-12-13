@@ -6,6 +6,7 @@ import PastProjects from "@/components/PastProjects";
 import HowItWorks from "@/components/HowItWorks";
 import CertificateStatus from "@/components/CertificateStatus";
 import SwagSection from "@/components/SwagSection";
+import SocialLinks from "@/components/SocialLinks";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import RevealOnScroll from "@/components/RevealOnScroll";
@@ -69,6 +70,7 @@ const Index = () => {
       <CertificateStatus />
       <PastProjects />
       <HowItWorks />
+      <SocialLinks />
       <Footer />
     </div>
   );
