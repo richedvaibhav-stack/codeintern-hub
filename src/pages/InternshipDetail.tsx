@@ -153,7 +153,7 @@ const InternshipDetail = () => {
                 className="bg-gradient-primary hover:opacity-90 hover:scale-105 transition-all text-base sm:text-lg px-6 sm:px-8 shadow-large w-full sm:w-auto"
               >
                 <a 
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSeGbJjSopl3DDMS1a56Ooz6pH3Q3amotJoAeJjTd4GSMo2wEg/viewform?usp=dialog"
+                  href="https://forms.gle/G1otaVC62koHjvzQA"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
