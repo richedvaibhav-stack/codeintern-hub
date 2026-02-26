@@ -33,6 +33,15 @@ const internDatabase: Record<string, InternRecord> = {
     taskStatus: "All Assigned Tasks Completed",
     eligibility: "Eligible – Certificate Approved",
     message: "Congratulations Sanket! You have successfully completed your UI/UX Design Internship at CodeIntern by completing all assigned tasks. Your certificate will be issued shortly."
+  },
+  "DEC003": {
+    name: "Shubham Shashikant Pol",
+    internId: "DEC003",
+    duration: "1 December – 31 December",
+    length: "1 Month",
+    taskStatus: "All Assigned Tasks Completed",
+    eligibility: "Eligible – Certificate Approved",
+    message: "Congratulations Shubham Shashikant Pol! You have successfully completed your 1-Month Internship at CodeIntern from 1 December to 31 December with all assigned tasks completed. You are eligible for the Internship Completion Certificate."
   }
 };
 
